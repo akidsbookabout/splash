@@ -3,3 +3,6 @@
 
 # Node stuff
 node_modules/
+
+# Eleventy stuff
+_site/
