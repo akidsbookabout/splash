@@ -1,0 +1,12 @@
+{
+  "name": "A Kids Book About™",
+  "email": "hello@akidsbookabout.com",
+  "author": "A Kids Book About Inc.",
+  "url": "https://akidsbookabout.com",
+  "image": "https://akidsbookabout.com/img/a-kids-book-about.jpg",
+  "social": {
+    "facebook": "https://www.facebook.com",
+    "twitter": "https://www.twitter.com",
+    "linkedin": "https://www.linkedin.com"
+  }
+}

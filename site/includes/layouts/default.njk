@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if meta_title %}{{ meta_title }}{% else %}{{ title }}{% endif %}</title>
+  <meta name="title" content="{{ site.name }}">
+  <meta name="description" content="{% if meta_description %}{{ meta_description }}{% else %}{{ excerpt }}{% endif %}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:title" content="{{ site.name }}">
+  <meta property="og:description" content="{% if meta_description %}{{ meta_description }}{% else %}{{ excerpt }}{% endif %}">
+  <meta property="og:image" content="{{ site.image }}">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{ site.url }}">
+  <meta property="twitter:title" content="{{ site.name }}">
+  <meta property="twitter:description" content="{% if meta_description %}{{ meta_description }}{% else %}{{ excerpt }}{% endif %}">
+  <meta property="twitter:image" content="{{ site.image }}">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
+  {% if helpers.environment == "development" %}
+    {# call main.css in development mode #}
+    <link rel="stylesheet" href="/css/main.css">
+  {% else %}
+    {# otherwise, call main.min.css #}
+    <link rel="stylesheet" href="/css/main.min.css">
+  {% endif %}
+  <link rel="icon" type="image/png" href="/img/favicon.ico">
+</head>
+<body {% if body_class %} id="{{ body_class }}"{% endif %}>
+  {{ content | safe }}
+  {# scripts #}
+  {% if helpers.environment == "development" %}
+    <script src="/js/main.js"></script>
+  {% else %}
+    <script src="/js/main.min.js"></script>
+  {% endif %}
+</body>
+</html>

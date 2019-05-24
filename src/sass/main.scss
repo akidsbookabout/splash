@@ -1,0 +1,15 @@
+// Utilities
+
+@import '_normalize';
+@import '_utils';
+
+// Global
+
+@import '_global';
+
+article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
