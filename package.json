@@ -14,7 +14,7 @@
   "author": "A Kids Book About Inc.",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^0.7.1",
+    "@11ty/eleventy": "^1.0.2",
     "@babel/core": "^7.2.0",
     "@babel/preset-env": "^7.3.1",
     "gulp": "^3.9.1",
